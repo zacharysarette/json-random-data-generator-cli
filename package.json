@@ -1,6 +1,6 @@
 {
   "name": "json-random-data-generator-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A command line interface for the json-random-generator package",
   "main": "/dist/json-random-data-generator-cli.js",
   "scripts": {
