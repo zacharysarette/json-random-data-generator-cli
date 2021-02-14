@@ -2,8 +2,12 @@
   "name": "json-random-data-generator-cli",
   "version": "1.0.0",
   "description": "A command line interface for the json-random-generator package",
-  "main": "index.js",
+  "main": "/dist/json-random-data-generator-cli.js",
   "scripts": {
+    "generate": "node ./dist/json-random-data-generator-cli.js",
+    "lint": "standard --fix",
+    "build": "webpack --mode=production",
+    "build-dev": "webpack --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -11,10 +15,28 @@
     "generator",
     "cli"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacharysarette/json-data-generator-cli.git"
+  },
   "author": "Zachary W Sarette",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0",
+    "json-random-data-generator": "^1.3.1",
     "yargs": "^16.2.0"
+  },
+  "bin": {
+    "jsonRDG-cli": "./dist/json-random-data-generator-cli.js"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "standard": {
+    "ignore": [
+      "/dist/"
+    ]
   }
 }

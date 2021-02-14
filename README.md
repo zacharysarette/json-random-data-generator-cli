@@ -21,14 +21,22 @@ This is a command line tool for the JSON Random Data Generator library.
 ---
 
 ## Installation
+
+Locally:
+```
+npm i --save-dev json-random-data-generator-cli
 ```
 
+Globally:
+```
+npm install -g json-random-data-generator-cli
 ```
 ## Usage 
 
-> generateJson
+Command:
+> jsonRDG-cli
 
-Usage: json-data-generator -a string -f string -n number -c string
+Usage:  -a string -f string -n number -c string
 
 Options:
       --help                       Show help                           [boolean]
@@ -43,14 +51,22 @@ Options:
                                    config folder             [string] [required]
 
 Examples:
+```
   npm run generate -- -a customerComments -f ./exports/exampleData.json -n 200
   -c ./configs/exampleConfig.json
+```
+  OR
 
-  If the above example doesn't work, try adding the following line to your config file under scripts. 
-  "generate": "generateJson"
+```
+  jsonRDG-cli -a customerComments -f ./exports/exampleData.json -n 200 -c example.json
+```
+Troubleshooting:
+
+- Make sure the directory that you want to write to exists.
+- Make sure the directory that you want to read from exists.
+- Make sure the name of the array of objects is correct.
 
 ---
-
 ## Example Config File:
 
 ```json
