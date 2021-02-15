@@ -18,6 +18,8 @@
 
 This is a command line tool for the JSON Random Data Generator library.
 
+You can find out more about the library from the [github repository](https://github.com/zacharysarette/json-random-data-generator#readme) or the [npm page](https://www.npmjs.com/package/json-random-data-generator).
+
 ---
 
 ## Installation
@@ -33,7 +35,8 @@ npm install -g json-random-data-generator-cli
 ```
 ## Usage 
 
-Command:
+### Command:
+
 > jsonRDG-cli
 
 Usage:  -a string -f string -n number -c string
@@ -50,7 +53,7 @@ Options:
   -c, --configFile                 The path for the config file that is in the
                                    config folder             [string] [required]
 
-Examples:
+### Examples:
 ```
   npm run generate -- -a customerComments -f ./exports/exampleData.json -n 200
   -c ./configs/exampleConfig.json
@@ -60,7 +63,7 @@ Examples:
 ```
   jsonRDG-cli -a customerComments -f ./exports/exampleData.json -n 200 -c example.json
 ```
-Troubleshooting:
+### Troubleshooting:
 
 - Make sure the directory that you want to write to exists.
 - Make sure the directory that you want to read from exists.
